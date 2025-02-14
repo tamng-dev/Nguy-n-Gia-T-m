@@ -1,0 +1,40 @@
+{
+  "name": "99tech",
+  "main": "server.js",
+  "module": "server.js",
+  "dependencies": {
+    "@sentry/node": "^5.5.0",
+    "bluebird": "^3.7.2",
+    "body-parser": "^1.20.2",
+    "chai": "^4.3.10",
+    "chalk": "^5.3.0",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "moment-timezone": "^0.5.45",
+    "mysql2": "^3.6.5",
+    "sequelize": "^6.35.1",
+    "typescript": "^5.3.3",
+    "ua-parser-js": "^1.0.37",
+    "winston": "^3.11.0",
+    "winston-daily-rotate-file": "^4.7.1"
+  },
+  "devDependencies": {
+    "@types/bluebird": "^3.5.42",
+    "@types/chai": "^4.3.11",
+    "@types/compression": "^1.7.5",
+    "@types/cookie-parser": "^1.4.6",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.5",
+    "@types/ua-parser-js": "^0.7.39"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node server.js",
+    "dev": "tsc && node --env-file .env server.js"
+  },
+  "type": "module"
+}
